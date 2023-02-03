@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Room-Bold";
+    font-style: bold;
+    src: url("../public/fonts/Room-Bold.woff");
+  }
+
+  @font-face {
+    font-family: "Room-Medium";
+    font-style: medium;
+    src: url("../public/fonts/Room-Medium.woff");
+  }
+
+  @font-face {
+    font-family: "Room-Light";
+    font-style: light;
+    src: url("../public/fonts/Room-Light.woff");
+  }
+}
+
+@layer components {
+  .title-estudios {
+    @apply font-roomMedium text-xl tracking-widest inline;
+  }
+  .nivel-estudio {
+    @apply font-roomLight inline lg:block;
+  }
+  .instituto {
+    @apply font-thin ml-1 inline lg:block;
+  }
+}
