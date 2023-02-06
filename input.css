@@ -23,13 +23,24 @@
 }
 
 @layer components {
+  /*° Estilos tailwinds de la barra lateral (aside) */
+  /** Estudios  */
   .title-estudios {
-    @apply font-roomMedium text-xl tracking-widest inline;
+    @apply font-roomMedium text-xl tracking-widest;
   }
   .nivel-estudio {
     @apply font-roomLight inline lg:block;
   }
   .instituto {
     @apply font-thin ml-1 inline lg:block;
+  }
+  /** hr */
+  .aside-hr {
+    @apply h-px mt-1 mb-4 border border-amber-300;
+  }
+
+  /** Cursos*/
+  .container-curso {
+    @apply border-y py-3 mb-2 flex justify-between items-center;
   }
 }

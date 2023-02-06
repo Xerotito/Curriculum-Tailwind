@@ -1,79 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curriculum proyecto</title>
-    <link rel="stylesheet" href="input.css" />
-  </head>
-  <body>
-    <div id="container" class="border border-black lg:container mx-auto">
-      <!--° Header --------------------------------------------------------------------------------------->
-      <header class="grid grid-cols-8">
-        <!-- * contenedor foto de perfil -->
-        <figure class="justify-center items-center col-span-2 bg-black lg:h-80 flex">
-          <img class="rounded-full" src="avatar.png" alt="foto de perfil" />
-        </figure>
 
-        <!-- * contenedor nombre y título -->
-        <div class="flex items-center col-span-6">
-          <div class="flex flex-col justify-center bg-amber-300 h-full w-full lg:h-[10.5rem]">
-            <h1 class="font-roomBold self-center text-2xl tracking-wide lg:self-start lg:text-5xl lg:ml-12 lg:tracking-[15px]">Victor Diaz</h1>
-            <h2 class="font-roomLight self-center text-xl tracking-wide lg:font-roomMedium lg:self-start lg:text-3xl lg:ml-12 lg:tracking-[15px]">FrontEnd developer</h2>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum proyecto</title>
+  <link rel="stylesheet" href="input.css" />
+</head>
+
+<body>
+
+  <div id="container" class="border border-black lg:container mx-auto">
+    <!--° Header --------------------------------------------------------------------------------------->
+    <header class="grid grid-cols-8">
+      <!-- * contenedor foto de perfil -->
+      <figure class="justify-center items-center col-span-2 bg-black lg:h-80 flex">
+        <img class="rounded-full" src="avatar.png" alt="foto de perfil" />
+      </figure>
+
+      <!-- * contenedor nombre y título -->
+      <div class="flex items-center col-span-6">
+        <div class="flex flex-col justify-center bg-amber-300 h-full w-full lg:h-[10.5rem]">
+          <h1
+            class="font-roomBold self-center text-2xl tracking-wide lg:self-start lg:text-5xl lg:ml-12 lg:tracking-[15px]">
+            Victor Diaz</h1>
+          <h2
+            class="font-roomLight self-center text-xl tracking-wide lg:font-roomMedium lg:self-start lg:text-3xl lg:ml-12 lg:tracking-[15px]">
+            FrontEnd developer</h2>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <!--° Barra lateral (Aside) -------------------------------------------------------------------------------->
-      <main class="grid grid-cols-1 lg:grid-cols-8">
-        <aside class="bg-[#212026] w-full lg:col-span-2">
-          <!--*Artículo Estudios -->
-          <article class="text-white pt-5 pl-5 lg:pl-6 pr-8">
-            <span class="title-estudios">Estudios</span>
-            <hr class="h-px mt-1 mb-2 bg-amber-300 border-0" />
+    <!--° Barra lateral (Aside) -------------------------------------------------------------------------------->
+    <!--* Artículo Estudios -->
+    <main class="grid grid-cols-1 lg:grid-cols-8">
+      <aside class="bg-[#212026] w-full lg:col-span-2">
+        <!--*Artículo Estudios -->
+        <article class="text-white pt-5 pl-5 lg:pl-6 pr-8">
+          <span class="title-estudios">Estudios</span>
+          <hr class="hr-aside" />
 
-            <div class="mt-2">
-              <h3 class="nivel-estudio">Nivel Primario:</h3>
-              <p class="instituto">Escuela N°1-485 Avelino Maure</p>
+          <div class="mt-2">
+            <h3 class="nivel-estudio">Nivel Primario:</h3>
+            <p class="instituto">Escuela N°1-485 Avelino Maure</p>
+          </div>
+
+          <div class="mt-2">
+            <h3 class="nivel-estudio">Nivel Secundario:</h3>
+            <p class="instituto">Escuela N° 3-442 Lujan de Cuyo</p>
+          </div>
+
+          <div class="mt-2">
+            <h3 class="nivel-estudio">Nivel Universitario:</h3>
+            <p class="instituto">Facultad Ingeniería UNCuyo: Licenciatura en ciencias de la computación - cursado hasta
+              3°año (2019)</p>
+          </div>
+        </article>
+
+        <!--* Artículo Cursos (desplegable) -->
+        <article class="text-white pt-5 pl-5 lg:pl-6 pr-8">
+          <div class="relative w-full overflow-hidden">
+            <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-8 z-10 opacity-0 cursor-pointer" />
+
+            <!-- Iconoc svg texto desplegable -->
+            <div
+              class="absolute top-1 left-[5.2rem] text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25" />
+              </svg>
             </div>
+            <span class="title-estudios">Cursos</span>
 
-            <div class="mt-2">
-              <h3 class="nivel-estudio">Nivel Secundario:</h3>
-              <p class="instituto">Escuela N°X-XXX Tu vieja</p>
-            </div>
+            <hr class="aside-hr" />
+            <!-- Aquí comienza el contenido desplegable (los cursos)-->
+            <div class="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
 
-            <div class="mt-2">
-              <h3 class="nivel-estudio">Nivel Universitario:</h3>
-              <p class="instituto">Facultad Ingenieria Uncuyo: Licenciatura en ciencias de la computación - cursado hasta 3°año (2019)</p>
-            </div>
-          </article>
+              <!-- Mantenimiento y redes -->
 
-          <!--* Artículo Cursos (desplegable) -->
-          <article class="text-white pt-5 pl-5 lg:pl-6 pr-8">
-            <div class="relative w-full overflow-hidden">
-              <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-8 z-10 opacity-0 cursor-pointer" />
-
-              <!-- Icono desplegable svg -->
-              <div class="absolute top-1 left-[5.2rem] text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25" />
-                </svg>
+              <!-- PHP y Mysql básico -->
+              <div class="container-curso">
+                <p class="font-roomLight text-xs">Base de datos con php y mysql inicial – Instituto
+                  de informática UTN</p>
+                <button class="certificado_btn relative" >   
+                  <div class="tooltip-curso text-xs bg-gray-800 text-white px-1 absolute left-[-50px] top-[-18px] hidden">
+                    Ver certificado
+                  </div>               
+                  <img src="certificado.svg" alt="">
+                </button>
               </div>
-              <span class="title-estudios">Cursos</span>
-
-              <!-- Contenido desplegable -->
-              <hr class="h-px mt-1 mb-2 bg-amber-300 border-0" />
-              <div class="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
-                <div class="p-4">
-                  <p class="text-black">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, asperiores optio temporibus exercitationem architecto doloribus autem accusamus nam deleniti maiores.
-                  </p>
-                </div>
-              </div>
             </div>
-          </article>
-        </aside>
-      </main>
-    </div>
-  </body>
+        </article>
+      </aside>
+    </main>
+  </div>
+</body>
+<script src="scripts.js"></script>
 </html>
