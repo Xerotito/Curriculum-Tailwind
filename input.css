@@ -44,3 +44,7 @@
     @apply border-y py-3 mb-2 flex justify-between items-center;
   }
 }
+
+/* .certificado_btn:hover .tooltip_curso {
+  display: block;
+} */

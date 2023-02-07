@@ -1,10 +1,7 @@
-/* Al terminar de cargar todo el DOM agregarmos nuestro codigo js para evitar errores */
-window.addEventListener('DOMContentLoaded', () => {
-  console.log("El DOM cargo correctamente")
-  const tooltip = document.querySelector('.tooltip-curso')
-  const boton = document.querySelector('.certificado_btn')
+/* Ya que no encontre la forma de delegar un hover a otra animación desde tailwin y no queria mesclar con css puro
+delege el evento de mouseover a cada boton de certificado de certificado para mostrar el tooltip */
+const cursos = document.getElementById('cursos')
 
-  boton.addEventListener('mouseenter', e => console.log('entrando'))
-  boton.addEventListener('mouseleave', e => console.log('saliendo'))
+cursos.addEventListener('mouseover', (e) => e.target.matches('.certificado_btn') && e.target.firstElementChild.classList.remove('hidden')) //Removemos hidden
+cursos.addEventListener('mouseout', (e) => e.target.matches('.certificado_btn') && e.target.firstElementChild.classList.add('hidden'))    //Volvemos a agregar hidden
 
-})
