@@ -22,10 +22,15 @@
   }
 }
 
+/*° "Componetizamos" los estilos de tailwind para ser mas facil modificar algun elemento repetido */
 @layer components {
-  /*° Estilos tailwinds de la barra lateral (aside) */
+  /*# Estilos tailwinds de la barra lateral (aside) */
+  .articulo {
+    @apply text-white pt-5 pl-5 lg:pl-6 pr-8;
+  }
+
   /** Estudios  */
-  .title-estudios {
+  .title {
     @apply font-roomMedium text-xl tracking-widest;
   }
   .nivel-estudio {
@@ -34,17 +39,21 @@
   .instituto {
     @apply font-thin ml-1 inline lg:block;
   }
-  /** hr */
   .aside-hr {
     @apply h-px mt-1 mb-4 border border-amber-300;
   }
 
   /** Cursos*/
-  .container-curso {
+  .container_curso {
     @apply border-y py-3 mb-2 flex justify-between items-center;
   }
+  .title_curso {
+    @apply font-roomLight text-xs;
+  }
+  .certificado_btn {
+    @apply relative opacity-60 hover:opacity-100;
+  }
+  .svg_container_cursos {
+    @apply w-[40px] h-[40px] pointer-events-none;
+  }
 }
-
-/* .certificado_btn:hover .tooltip_curso {
-  display: block;
-} */
