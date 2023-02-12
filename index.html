@@ -30,113 +30,108 @@
       </div>
     </header>
 
-    <!--° Barra lateral (Aside) -------------------------------------------------------------------------------->
     <main class="grid grid-cols-1 lg:grid-cols-8">
-      <aside id="aside" class="bg-[#212026] w-full lg:col-span-2">
-
+    <!--° Barra lateral (Aside) -------------------------------------------------------------------------------->
+      <aside id="aside" class="bg-[#212026] pb-4 w-full  lg:col-span-2">
+      
         <!--*Estudios section-->
         <section class="seccion">
           <span class="title">Estudios</span>
           <hr class="aside-hr" />
-
+      
           <div class="mt-2">
             <h3 class="nivel-estudio">Nivel Primario:</h3>
             <p class="instituto">Escuela N°1-485 Avelino Maure</p>
           </div>
-
+      
           <div class="mt-2">
             <h3 class="nivel-estudio">Nivel Secundario:</h3>
             <p class="instituto">Escuela (sin nombre) N° 3-442 Lujan de Cuyo</p>
           </div>
-
+      
           <div class="mt-2">
             <h3 class="nivel-estudio">Nivel Universitario:</h3>
             <p class="instituto">Facultad Ingeniería UNCuyo: Licenciatura en ciencias de la computación - cursado hasta
               3°año (2019)</p>
           </div>
         </section>
-
+      
         <!--* Cursos section (desplegable) -->
         <section class="seccion">
           <div id="cursos" class="relative w-full overflow-hidden">
-            <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-8 z-10 opacity-0 cursor-pointer" />
-
+            <input id="desplegable" type="checkbox" checked class="peer absolute top-0 inset-x-0 w-full h-8 z-10 opacity-0 cursor-pointer"/>
+      
             <!-- Icono svg texto desplegable -->
             <div
               class="absolute top-1 left-[5.2rem] text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25" />
               </svg>
             </div>
             <span class="title">Cursos</span>
             <hr class="aside-hr" />
-
+      
             <!--** Aquí comienza el contenido desplegable (los cursos)-->
             <div class="cursos overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-screen">
-
+      
               <!-- Mantenimiento y redes UTN -->
               <div class="container_curso">
                 <p class="title_curso">Reparación y mantenimiento de PC, administración de redes – Instituto de
                   informática UTN
                 </p>
                 <button class="certificado_btn">
-                  <div
-                    class="tooltip_curso text-xs bg-gray-800 text-white px-1 absolute left-[-50px] top-[-18px] hidden">
+                  <div class="tooltip_curso text-xs bg-gray-800 text-white px-1 absolute left-[-50px] top-[-18px] hidden">
                     Ver certificado</div>
                   <div class="svg_container_cursos">
                     <img src="certificado.svg" alt="imagen certificado">
                   </div>
                 </button>
               </div>
-
+      
               <!-- Se programar - argentina programa -->
               <div class="container_curso">
                 <p class="title_curso">SÉ PROGRAMAR – Argentina Programa 4.0
                 </p>
                 <button class="certificado_btn">
-                  <div
-                    class="tooltip_curso text-xs bg-gray-800 text-white px-1 absolute left-[-50px] top-[-18px] hidden">
+                  <div class="tooltip_curso text-xs bg-gray-800 text-white px-1 absolute left-[-50px] top-[-18px] hidden">
                     Ver certificado</div>
                   <div class="svg_container_cursos">
                     <img src="certificado.svg" alt="imagen certificado">
                   </div>
                 </button>
               </div>
-
+      
               <!-- Master en CSS: Responsive, SASS, Flexbox, Grid y Bootstrap - Udemy-->
               <div class="container_curso">
                 <p class="title_curso">Master en CSS: Responsive, SASS, Flexbox, Grid y Bootstrap – Udemy</p>
                 <button class="certificado_btn">
-                  <div
-                    class="tooltip_curso text-xs bg-gray-800 text-white px-1 absolute left-[-50px] top-[-18px] hidden">
+                  <div class="tooltip_curso text-xs bg-gray-800 text-white px-1 absolute left-[-50px] top-[-18px] hidden">
                     Ver certificado</div>
                   <div class="svg_container_cursos">
                     <img src="certificado.svg" alt="imagen certificado">
                   </div>
                 </button>
               </div>
-
+      
               <!-- Java script inicial- CILSA-->
               <div class="container_curso">
                 <p class="title_curso">JavaScript inicial – CILSA</p>
                 <button class="certificado_btn">
-                  <div
-                    class="tooltip_curso text-xs bg-gray-800 text-white px-1 absolute left-[-50px] top-[-18px] hidden">
+                  <div class="tooltip_curso text-xs bg-gray-800 text-white px-1 absolute left-[-50px] top-[-18px] hidden">
                     Ver certificado</div>
                   <div class="svg_container_cursos">
                     <img src="certificado.svg" alt="imagen certificado">
                   </div>
                 </button>
               </div>
-
+      
               <!-- Master JavaScript HTML5- Udemy-->
               <div class="container_curso">
                 <p class="title_curso">Master en JavaScript Moderno, ES2023, APIs HTML5 – Udemy</p>
                 <button class="certificado_btn">
-                  <div
-                    class="tooltip_curso text-xs bg-gray-800 text-white px-1 absolute left-[-50px] top-[-18px] hidden">
+                  <div class="tooltip_curso text-xs bg-gray-800 text-white px-1 absolute left-[-50px] top-[-18px] hidden">
                     Ver certificado</div>
                   <div class="svg_container_cursos">
                     <img src="certificado.svg" alt="imagen certificado">
@@ -145,16 +140,15 @@
               </div>
             </div> <!-- **Finalización contenido desplegable -->
         </section>
-
-        <!--* Contacto section -->
+      
+        <!-- * Contacto section -->
         <section id="contacto" class="seccion">
           <span class="title">Contacto</span>
           <hr class="aside-hr" />
-
+      
           <!-- Dirección -->
           <div class="contacto_aside flex items-center mb-6">
-            <img class="logo_container w-[56px] h-[56px] pointer-events-none" src=" /img/house_white.png"
-              alt="casa logo">
+            <img class="logo_container w-[56px] h-[56px] pointer-events-none" src=" /img/house_white.png" alt="casa logo">
             <div class="direccion_contacto ml-8">
               <a class="block font-roomBold"
                 href="https://www.google.com.ar/maps/place/Carola+Lorenzini+728,+Godoy+Cruz,+Mendoza/@-32.9216998,-68.8564981,17z/data=!4m5!3m4!1s0x967e097eca4cfb57:0xaec29a50e576dbe3!8m2!3d-32.9217532!4d-68.8543415"
@@ -162,44 +156,48 @@
               <span class="block font-roomBold">Godoy Cruz - Mendoza </span>
             </div>
           </div>
-
+      
           <!-- Teléfono -->
           <div class="contacto_aside flex items-center mb-6">
             <img class="logo_container w-[56px] h-[56px] pointer-events-none" src=" /img/cell.svg" alt="celular logo">
             <a class="font-roomBold text-xl ml-8" href="https://en.wh.ms/542617005514" target="_blank">261-7005514</a>
           </div>
-
+      
           <!-- Email -->
           <div class="contacto_aside flex items-center mb-6">
             <img class="logo_container w-[56px] h-[56px] pointer-events-none" src=" /img/email_white.png" alt="celular logo">
-            <a class="font-roomBold text-[1.20rem] ml-7" href="mailto:vitorx06@hotmail.com" target="_blank">vitorx06@hotmail.com</a>
+            <a class="font-roomBold text-[1.20rem] ml-7" href="mailto:vitorx06@hotmail.com"
+              target="_blank">vitorx06@hotmail.com</a>
           </div>
-
+      
           <!-- Twitter -->
           <div class="contacto_aside flex items-center mt-6">
             <img class="logo_container w-[56px] h-[56px] pointer-events-none" src=" /img/twitter_white.png" alt="twitter logo">
             <a class="font-roomBold text-xl ml-8" href="https://twitter.com/home" target="_blank">Twitter</a>
           </div>
-          </section>
-
-          <!--* Proyectos section -->
-          <section id="proyectos" class="seccion">
-            <span class="title">Proyectos</span>
-            <hr class="aside-hr" />
-          
-            <!-- Github -->
-            <div class="contacto_aside flex items-center mt-6">
-              <img class="logo_container w-[56px] h-[56px] pointer-events-none" src=" /img/github_white.png" alt="twitter logo">
-              <a class="font-roomBold text-xl ml-8" href="https://github.com/Xerotito?tab=repositories" target="_blank">Github</a>
-            
-            </div>
-          
-          </section>
-
+        </section>
+      
+        <!--* Proyectos section -->
+        <section id="proyectos" class="seccion">
+          <span class="title">Proyectos</span>
+          <hr class="aside-hr" />
+      
+          <!-- Github -->
+          <div class="contacto_aside flex items-center mt-6">
+            <img class="logo_container w-[56px] h-[56px] pointer-events-none" src=" /img/github_white.png" alt="twitter logo">
+            <a class="font-roomBold text-xl ml-8" href="https://github.com/Xerotito?tab=repositories"
+              target="_blank">Github</a>
+          </div>
+        </section>
       </aside>
+
+    <!--° Conteindo central --------------------------------------------------------------------------------------------------->
+      <article id="content" class="bg-gray-500 w-full lg:col-span-6">
+        <h2>contenido</h2>
+        <p>lorem</p>
+      </article>
     </main>
   </div>
 </body>
 <script src="scripts.js"></script>
-
 </html>
