@@ -14,10 +14,10 @@ const changeDesplegable = (e) => {
 // por ultimo un listener que responda al cambio de pantalla y haga los desplegables responsivos llamando a la función anterior.
 mediaQuery.addEventListener("change", changeDesplegable);
 
-//# Tooltip (ver certificado) a los links de la sección cursos ----------------------------------------------------
+/* //# Tooltip (ver certificado) a los links de la sección cursos ----------------------------------------------------
 const cursos = document.getElementById("cursos") //Delegamos el evento solamente cuando la sección cursos este desplegada ()
 cursos.addEventListener("mouseover", e => e.target.matches(".certificado_btn") && e.target.firstElementChild.classList.remove("hidden")) //Al pasar el cursor se hace visible
-cursos.addEventListener("mouseout", e => e.target.matches(".certificado_btn") && e.target.firstElementChild.classList.add("hidden")) //Al quitar el cursor volvemos a desaparecerlo
+cursos.addEventListener("mouseout", e => e.target.matches(".certificado_btn") && e.target.firstElementChild.classList.add("hidden")) //Al quitar el cursor volvemos a desaparecerlo */
 
 //# Animaciones (sección contacto) --------------------------------------------------------------------------------
 document.addEventListener("mouseover", e => {
